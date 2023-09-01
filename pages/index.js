@@ -8,6 +8,7 @@ export default function Home() {
     <>
       <div className={styles.container}>
         <h1>Next.js</h1>
+        <button class="btn btn-primary">Bouton</button>
       </div>
     </>
   )
