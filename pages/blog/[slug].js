@@ -10,7 +10,13 @@ export default function article() {
   console.log(router.asPath);
   console.log(router.query);
 
+  const pushFunction = () => {
+    router.push('/')
+  }
+
   return (
-    <div>Plats</div>
+    <div>
+      <button onClick={pushFunction}>Accueil</button>
+    </div>
   )
 }

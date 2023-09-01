@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <nav>
         <Link href="/">Accueil</Link>
-        <Link href="/blog/article">Article</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/blog/article">  Article</Link>
+        <Link href="/contact">  Contact</Link>
     </nav>
   )
 }
