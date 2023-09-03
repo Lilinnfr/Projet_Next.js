@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function index(props) {
 
@@ -10,7 +11,7 @@ console.log(props);
       <h1 className="my-4">Listes de vocabulaire</h1>
       <ul className="list-group">
         {props.array.map(item => (
-          <li className="list-group-item">
+          <li key={uuidv4()} className="list-group-item">
             <Link href={Object.keys(item)[0]}>{Object.keys(item)[0]}</Link>
           </li>
         ))}
