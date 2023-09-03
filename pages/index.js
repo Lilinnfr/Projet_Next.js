@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 export default function Home(props) { // on n'oublie pas d'ajouter nos props ici sinon inutilisable
 
-  console.log(props);
+  // console.log(props);
 
   return (
     <>
