@@ -8,6 +8,8 @@ export default function Navbar() {
         <Link href="/">Accueil</Link>
         <Link href="/lists">Catégories</Link>
         <Link href="/quotes">Citations</Link>
+        <Link href="/ssr">BTC</Link>
     </nav>
   )
 }
+
