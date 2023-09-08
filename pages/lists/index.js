@@ -12,7 +12,7 @@ console.log(props);
       <ul className="list-group">
         {props.array.map(item => (
           <li key={uuidv4()} className="list-group-item">
-            <Link href={Object.keys(item)[0]}>{Object.keys(item)[0]}</Link>
+            <Link href={`/lists/${item.name}`}>{item.name}</Link>
           </li>
         ))}
       </ul>

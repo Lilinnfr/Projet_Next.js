@@ -1,6 +1,7 @@
 
 import styles from '@/styles/Home.module.css'
 import Head from 'next/head'
+import { v4 as uuidv4 } from 'uuid';
 
 
 export default function Home(props) { // on n'oublie pas d'ajouter nos props ici sinon inutilisable
@@ -18,7 +19,7 @@ export default function Home(props) { // on n'oublie pas d'ajouter nos props ici
         <table className={styles.tableau}>
           <tbody>
             {props.array.map(el => ( 
-              <tr>
+              <tr key={uuidv4()}>
                 <td>{el.en}</td>
                 <td>{el.fr}</td>
               </tr>
